@@ -14,6 +14,9 @@ const controllers = require("./controllers");
 app.use(Express.json());
 app.use(middlewares.CORS)
 app.use("/user", controllers.User);
+app.use("/skinList", controllers.Skin);
+app.use("/ownedSkins", controllers.OwnedSkins);
+app.use("/dropInvent", controllers.Drop)
 
 const resetDatabase = {force:true}
 db.authenticate()

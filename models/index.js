@@ -1,8 +1,9 @@
 const User = require("./user");
-// create individual files for your models and import them here
-
-// Setup Associations
+const Skin = require("./skinList");
+const Drop = require("./dropInvent");
+const UpgradeMats = require("./upgradeMatInvent");
+const OwnedSkins = require("./ownedSkin")
 
 module.exports = {
-  User,
+  User, Skin, Drop, UpgradeMats, OwnedSkins
 };
